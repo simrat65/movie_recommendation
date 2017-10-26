@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from scipy.spatial.distance import cosine
 
-# Movie_Recommendation without genres
+# Movie_Recommendation with genres
 
 u_cols = ['user_id','sex','age','occupation', 'zip_code']
 u_file=pd.read_csv(r'./users.dat',sep='::',names=u_cols,engine='python')
