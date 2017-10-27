@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 from scipy.spatial.distance import cosine
 from sklearn.metrics.pairwise import cosine_similarity
+
+# Movie Recommendation without genres
 u_cols = ['user_id','sex','age','occupation', 'zip_code']
 u_file=pd.read_csv(r'./users.dat',sep='::',names=u_cols,engine='python')
 u_file.index=u_file['user_id']
